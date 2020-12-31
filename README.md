@@ -33,3 +33,15 @@ class sms.runtime.CommandRunner (in module sms.runtime) cannot access class sms.
 ```
 exports sms.service.impl;
 ```
+
+构建镜像环境：linux+jdk9
+```
+git clone https://github.com/buejee/sms.git
+cd sms
+mvn package
+cd runtime/target/runtime-1.0-dist-dir/modules
+jlink -p .:/usr/java/jdk-9/jmods --add-modules sms.runtime --output /data/sms-output --launcher sms=sms.runtime/sms.runtime.CommandRunner
+```
+
+运行截图：
+![runtime](https://github.com/buejee/sms/tree/master/src/main/resources/runtime.png "运行截图")
