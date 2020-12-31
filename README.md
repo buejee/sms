@@ -3,7 +3,9 @@ java9 module program demo
 
 本项目代码按照慕课网视频教程《Java9之模块系统》而来，代码亦根据课程视频敲下来。虽然达不到课程效果，但是基本思路是对的。
 本项目代码对于课程视频有些许改动，比如这里是在eclipse下编码，有些设置有些变化：
+
 1、如pom.xml中加入了其他模块的依赖，就不需要再在项目属性中的buildpath下再将项目作为Modulepath加入到工程里面。
+
 2、另外，我这里对于实体保存这里，会因为没有实现Serializable接口而报错，故实体Entity做了implements Serialiazable的处理。
 ```
 Caused by: java.io.NotSerializableException
