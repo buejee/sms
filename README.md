@@ -44,4 +44,4 @@ jlink -p .:/usr/java/jdk-9/jmods --add-modules sms.runtime --output /data/sms-ou
 ```
 
 运行截图：
-![runtime](https://github.com/buejee/sms/tree/master/src/main/resources/runtime.png "运行截图")
+![runtime](https://github.com/buejee/sms/blob/master/src/main/resources/runtime.png?raw=true "运行截图")
